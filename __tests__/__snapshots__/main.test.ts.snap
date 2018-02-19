@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getLogger exports 1`] = `
+Object {
+  "error": [Function],
+  "info": [Function],
+  "success": [Function],
+}
+`;
+
+exports[`getLogger works with objects 1`] = `
+Array [
+  Array [
+    "
+✅ : [32m[1m{[22m[39m
+[32m[1m  \\"t\\": \\"success\\"[22m[39m
+[32m[1m}[22m[39m
+",
+  ],
+  Array [
+    "
+ℹ️ : [33m{[39m
+[33m  \\"t\\": \\"info\\"[39m
+[33m}[39m
+",
+  ],
+  Array [
+    "
+🔥 : [31m[1m{[22m[39m
+[31m[1m  \\"t\\": \\"info\\"[22m[39m
+[31m[1m}[22m[39m
+    ",
+  ],
+]
+`;
+
+exports[`getLogger works with strings 1`] = `
+Array [
+  Array [
+    "
+✅ : [32m[1msuccess[22m[39m
+",
+  ],
+  Array [
+    "
+ℹ️ : [33minfo[39m
+",
+  ],
+  Array [
+    "
+🔥 : [31m[1minfo[22m[39m
+    ",
+  ],
+]
+`;
