@@ -5,7 +5,8 @@
   "module": "dist/index.m.js",
   "scripts": {
     "start": "npm run test",
-    "build": "rm -rf ./dist/ && microbundle build/main.js",
+    "build":
+      "rm -rf ./build/ && rm -rf ./dist/ && tsc && microbundle build/index.js && cp ./build/index.d.ts ./dist/",
     "test": "jest --watch --coverage"
   },
   "repository": {
