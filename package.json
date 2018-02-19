@@ -1,6 +1,6 @@
 {
-  "name": "ts-library",
-  "version": "0.1.0",
+  "name": "ts-logger",
+  "version": "0.1.1",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ts-bps/ts-library"
+    "url": "https://github.com/ts-bps/ts-logger"
   },
   "license": "MIT",
   "devDependencies": {
@@ -24,17 +24,11 @@
     "typescript": "^2.7.2"
   },
   "jest": {
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js"],
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/preprocessor.js"
     },
-    "testMatch": [
-      "**/__tests__/*.(ts|tsx|js)"
-    ]
+    "testMatch": ["**/__tests__/*.(ts|tsx|js)"]
   },
   "dependencies": {
     "chalk": "^2.3.1",
