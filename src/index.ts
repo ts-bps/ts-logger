@@ -5,7 +5,7 @@ export const getLogger = ({ log } = { log: console.log }) => {
   return {
     info: (message: any) =>
       log(`
-ℹ️ : ${chalk.yellow(
+ℹ️ : ${chalk.yellow.bold(
         is.object(message) ? JSON.stringify(message, null, 2) : message
       )}
 `),
